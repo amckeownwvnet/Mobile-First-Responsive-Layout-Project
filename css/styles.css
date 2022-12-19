@@ -1,0 +1,134 @@
+/* General Styles */
+
+.main-header {
+    padding-top: 2em;
+}
+
+.txtlogo{
+    align-self:center;
+}
+
+.nav {
+    margin-top: 1.5em;
+}
+
+.nav a{
+    display:block;
+    color: darkslategrey;
+    padding: .8em;
+    text-decoration:none;
+    border: #d6d6d6 solid 2px;
+    background:white;
+    border-radius:5px;
+    list-style: none;
+    text-align:center;
+}
+.nav li {
+    font-size: 1.5em;
+    margin-top:.2em;
+    margin-bottom:.2em;
+}
+
+
+body {
+    margin:0;
+    color:#696969;
+    font-family: 'Roboto';
+    flex-direction: column;
+    background-color:#e0e0e0;
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.portfolio {
+    background-color:white;
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.section img{
+    width:400px;
+    padding:10px;
+}
+
+.title {
+    font-size:2em;
+    padding: 3em;
+}
+
+h2 {
+    font-size:1.2em;
+}
+
+/* Flexbox styles */
+.main-header, .nav, .nav li, .portfolio{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.intro {
+    padding-top:2em;
+    text-align:center;
+}
+
+
+
+/* media queries */
+
+@media (min-width: 769px) {
+    .main-header{
+        flex-direction:column;
+    }
+    .txtlogo {
+        font-size: 2.5em;    
+    }
+    .nav {
+        flex-direction: row;
+        margin-top:3em;
+        justify-content:space-between;
+
+    }
+    .nav a{
+        border:none;
+        background:none;
+    }
+    .nav li {
+        text-decoration:none;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-header{
+        flex-direction:row;
+        
+}
+        .txtlogo {
+        margin-right:auto;
+        align-self:center;
+        font-size: 2em;    
+}
+    .nav {
+
+    flex-direction: row;
+        margin-top:0;
+        align-self:center;
+        
+    }
+    .nav a{
+        border:none;
+        background:none;
+    }
+    .nav li{
+       
+        font-size: 1.5em;
+        
+    }
+    
+    .intro img {
+        justify-content: right;
+    }
+}
