@@ -6,13 +6,14 @@
 
 .txtlogo{
     align-self:center;
+    padding:.04em;
 }
 
 .nav {
     margin-top: 1.5em;
 }
 
-.nav a{
+.nav a, ul a{
     display:block;
     color: darkslategrey;
     padding: .8em;
@@ -34,7 +35,6 @@ body {
     margin:0;
     color:#696969;
     font-family: 'Roboto';
-    flex-direction: column;
     background-color:#e0e0e0;
     text-align: center;
     font-size: 1.5em;
@@ -47,22 +47,24 @@ body {
     text-align:center;
 
 }
+.section {
+    text-align:center;
+}
 
 .section img{
-    width:400px;
+    width:90%;
     padding:10px;
 }
 
 .title {
     font-size:2em;
-    padding: 3em;
+    padding: 1em;
 }
 
 h2 {
     font-size:1.2em;
 }
 
-/* Flexbox styles */
 .main-header, .nav, .nav li, .portfolio{
     display:flex;
     flex-direction: column;
@@ -71,9 +73,23 @@ h2 {
 
 .intro {
     padding-top:2em;
-    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+ul {
+    list-style:none;
 }
 
+.full {
+    display:none;
+}
+
+.footer-nav{
+    display:flex;
+justify-content: space-evenly;
+    padding-left:0;
+}
 
 
 /* media queries */
@@ -83,33 +99,92 @@ h2 {
         flex-direction:column;
     }
     .txtlogo {
-        font-size: 2.5em;    
+        font-size:1.5em;
+        padding-left: .3em;
     }
     .nav {
         flex-direction: row;
-        margin-top:3em;
-        justify-content:space-between;
+        margin-top:1em;
+        justify-content:space-evenly;
 
     }
-    .nav a{
+    .nav a, ul a{
         border:none;
         background:none;
+        font-size: 1.5em;
     }
-    .nav li {
+    .nav li, {
         text-decoration:none;
-        font-size: 2em;
+        font-size: 1.5em;
     }
+    
+       .intro{
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+        align-items:center;
+        padding: 2em
+
+    }
+    .intro img{
+            width:200%;
+    }
+    .intro p{
+        font-size:;
+        padding:1em;
+    }
+    .row {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-evenly;
+    }
+    .section {
+        width:40%;
+    }
+    
+    .top {
+    display: none;
+  }
+  .full {
+    display: inline-block;
+  }
+    footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: Center;
+    }
+
 }
 
 @media (min-width: 1024px) {
     .main-header{
+        display:flex;
         flex-direction:row;
+        padding-left: 2em;
+        padding-right: 2em;
         
 }
+    .intro{
+        flex-direction: row-reverse;
+        justify-content:space-evenly;
+        align-items:center;
+        padding: 2em
+
+    }
+    .intro img{
+            width:30%;
+    }
+    
+    .intro p{
+        font-size:1.5em;
+        flex-basis:70%;
+       
+    }
         .txtlogo {
         margin-right:auto;
         align-self:center;
-        font-size: 2em;    
+        padding-left: 1em;
+   
 }
     .nav {
 
@@ -128,7 +203,20 @@ h2 {
         
     }
     
-    .intro img {
-        justify-content: right;
+
+    .section {
+        flex-basis:30%;
+        flex-wrap:wrap;
+        
+        
+}
+    #contact{
+        display:flex;
+        display:column;
+        justify-content: center
+    }
+    
+    .footer-nav{
+        padding-right:1em;
     }
 }
