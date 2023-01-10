@@ -9,6 +9,12 @@
     padding:.04em;
 }
 
+.txtlogobot{
+    font-size:1.4em;
+    align-self:center;
+
+}
+
 .nav {
     margin-top: 1.5em;
 }
@@ -51,7 +57,7 @@ body {
 }
 
 .section img{
-    width:90%;
+    width:80%;
     padding:10px;
 }
 
@@ -86,7 +92,7 @@ ul {
 
 .footer-nav{
     display:flex;
-justify-content: space-evenly;
+    justify-content: space-evenly;
     padding-left:0;
 }
 
@@ -100,6 +106,11 @@ justify-content: space-evenly;
     .txtlogo {
         font-size:1.5em;
         padding-left: .3em;
+    }
+    .txtlogobot {
+        font-size:1.3em;
+        padding-left: .3em;
+        align-self: center;  
     }
     .nav {
         flex-direction: row;
@@ -146,10 +157,10 @@ justify-content: space-evenly;
   .full {
     display: inline-block;
   }
-    footer{
+    footer-nav{
         display:flex;
         flex-direction:row;
-        justify-content: Center;
+        justify-content: space-evenly;
     }
 
 }
@@ -179,6 +190,13 @@ justify-content: space-evenly;
        
     }
         .txtlogo {
+        margin-right:auto;
+        align-self:center;
+        padding-left: 1em;
+   
+}
+    
+          .txtlogobot {
         margin-right:auto;
         align-self:center;
         padding-left: 1em;
